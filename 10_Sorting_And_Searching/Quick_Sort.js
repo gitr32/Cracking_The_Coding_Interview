@@ -1,6 +1,6 @@
 function quickSort(arr, left = 0, right = arr.length - 1) {
   const index = partition(arr, left, right);
-  console.log(left, right, index);
+  console.log(left, right);
   if (left < index - 1) {
     quickSort(arr, left, index - 1)
   }
@@ -43,6 +43,6 @@ function swap(arr, index1, index2) {
 }
 
 
-const arr = [0, 9, 3, 5, 3];
+const arr = [0, 2, 5, 9, 4, 6, 7, 8, 1, 3];
 quickSort(arr);
 console.log(arr);
